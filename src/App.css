@@ -1,0 +1,97 @@
+/* colors:
+95D7AE
+CBE2F5
+ffcbc1
+*/
+@font-face {
+    font-family: 'VelaSans';
+    src: url('./fonts/VelaSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VelaSans';
+    src: url('./fonts/VelaSans-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-family: 'VelaSans';
+    font-weight: normal;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #CBE2F5;
+}
+
+.about {
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./SVG/topelement.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a-left {
+    flex: 1;
+}
+
+.a-left-wrapper {
+    margin-left: 25%;
+}
+
+.a-right {
+    flex: 1;
+}
+
+.a-right-wrapper {
+    margin: 0 25% 0 10%;
+}
+
+.a-hello {
+    font-size: 30px;
+}
+
+.a-name {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.a-roles {
+    height: 50px;
+    overflow: hidden;
+}
+
+.a-roles-wrapper {
+    height: 100%;
+    animation: move 8s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    33.33% {
+      transform: translateY(-50px);
+    }
+    66.33% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(-150px);
+    }
+  }
+
+.a-roles-item {
+    height:50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.a-right {
+    align-self: center;
+}
