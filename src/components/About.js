@@ -10,10 +10,10 @@ const About = () => {
                     <h1 className='a-name'>Steph</h1>
                     <div className="a-roles">
                         <div className="a-roles-wrapper">
-                            <div className="a-roles-item">Front-End Developer</div>
-                            <div className="a-roles-item">Web Designer</div>
-                            <div className="a-roles-item">Graphic Designer</div>
-                            <div className="a-roles-item">Photographer</div>
+                            <div className="a-roles-item1">Front-End Developer</div>
+                            <div className="a-roles-item2">Web Designer</div>
+                            <div className="a-roles-item3">Graphic Designer</div>
+                            <div className="a-roles-item4">Photographer</div>
                         </div>
                     </div>
                 </div>

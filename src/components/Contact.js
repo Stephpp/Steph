@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="contact-wrapper">
                 <div className="c-left">
                     <div className="c-left-wrapper">
-                        <h1>You can find me on:</h1>
+                        <h1>Contact:</h1>
                         <div>
                             <a href="mailto:stephpp404@gmail.com"><img src={email} alt="email" /></a>
                             <a href="mailto:stephpp404@gmail.com"><h2>E-mail</h2></a>

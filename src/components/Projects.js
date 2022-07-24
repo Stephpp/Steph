@@ -12,11 +12,11 @@ const Projects = () => {
                 </div>
                 <div className="project-item">
                     <h1 className="p-title">Check My Steam</h1>
-                    <h3 className='p-text'>A Greek STEAM toy evaluation App, that helps educators and parents with choosing the right products for their children. My responsibilities in this project consisted of Full-Stack App Development using Flutter and Back4App, Graphic Design and scientific research.</h3>
+                    <h3 className="p-text">A Greek STEAM toy evaluation App, that helps educators and parents with choosing the right products for children. My responsibilities in this project consisted of Full-Stack App Development using Flutter and Back4App, Graphic Design and Scientific Research.</h3>
                 </div>
                 <div className="project-item">
                     <h1 className="p-title">LinkTree Clone</h1>
-                    <h3 className='p-text'>Simple link redirection website using HTML, CSS and JavaScript, following LinkTree's logic of design and functionality.</h3>
+                    <h3 className="p-text">Simple link redirection website using HTML, CSS and JavaScript, following LinkTree's logic of design and functionality.</h3>
                 </div>
             </div>
         </div>

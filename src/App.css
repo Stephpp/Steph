@@ -34,7 +34,6 @@ body {
     display:flex;
     flex-wrap: wrap;
     height: 100vh;
-    justify-content: center;
     align-items: center;
 }
 
@@ -65,10 +64,86 @@ body {
 }
 
 .a-roles {
-    margin-top: 70px;
-    height: 50px;
     overflow: hidden;
 }
+
+.a-roles-wrapper {
+    font-size: 30px;
+}
+.a-roles-item1 {
+    position: absolute;
+    opacity:0;
+    animation: animation1 12s infinite;
+}
+.a-roles-item2 {
+    position: absolute;
+    opacity:0;
+    animation: animation2 12s infinite;
+}
+.a-roles-item3 {
+    position: absolute;
+    opacity:0;
+    animation: animation3 12s infinite;
+}
+.a-roles-item4 {
+    position: absolute;
+    opacity:0;
+    animation: animation4 12s infinite;
+}
+
+
+@keyframes animation1 {
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity:0;
+    }
+}
+
+@keyframes animation2 {
+    40% {
+        opacity:0;
+    }
+    50% {
+        opacity:1;
+    }
+    60% {
+        opacity:0;
+    }
+}
+
+@keyframes animation3 {
+    60% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+    80% {
+        opacity:0;
+    }
+}
+
+@keyframes animation4 {
+    80% {
+        opacity:0;
+    }
+    90% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+/* Alternative text carousel
 
 .a-roles-wrapper {
     height: 100%;
@@ -88,7 +163,7 @@ body {
     100% {
         transform:translateY(0px)
     }
-  }
+  } */
 
 .a-roles-item {
     height:50px;
@@ -127,6 +202,13 @@ body {
     background-color: #e6a6ff;
     border: 3px solid black;
     box-shadow: 20px 20px black;
+    transition: 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform:translateY(-5px);
+    box-shadow: 25px 25px black;
+    background-color: #fffbe6;
 }
 
 .p-title {
@@ -141,6 +223,7 @@ body {
 
 .p-text {
     padding: 0 2vw;
+    font-size: 15px;
 }
 
 .contact {
@@ -160,7 +243,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .contact-section-title {
@@ -187,13 +269,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0
+    padding: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.c-left-wrapper div:hover {
+    transform: translateY(-5px)
 }
 
 .c-left-wrapper img {
     margin-right: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 a {
@@ -201,8 +288,3 @@ a {
     color:black;
     transition: color 0.2s ease-out;
 }
-
-a:hover {
-    color: #CBE2F5
-}
-
