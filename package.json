@@ -1,5 +1,6 @@
 {
-  "name": "stephpp",
+  "name": "steph",
+  "homepage": "https://Stephpp.github.io/Steph",
   "version": "1.0.0",
   "description": "Personal Portfolio Website using React, Webpack and Babel",
   "main": "index.js",

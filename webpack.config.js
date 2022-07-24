@@ -27,6 +27,8 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif)$/i,
                 type: 'asset/resource',
+                test: /\.svg/,
+                type: 'asset/inline'
                  
               },
               {
