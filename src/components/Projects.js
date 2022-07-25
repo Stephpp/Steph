@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="project-wrapper">
                 <div className="project-item">
                     <h1 className="p-title">This website</h1>
-                    <h3 className='p-text'>Responsive Website built using React, Webpack and Babel. It could also be built with pure HTML and CSS but I choose React in order to get familliar with some tools and workflows.</h3>
+                    <h3 className='p-text'>Responsive Website built using React, Webpack and Babel. It could also be built with pure HTML and CSS but I choose React to get more familiar with some tools and workflows.</h3>
                 </div>
                 <div className="project-item">
                     <h1 className="p-title">Check My Steam</h1>
