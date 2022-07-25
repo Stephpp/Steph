@@ -31,14 +31,24 @@ const Contact = () => {
                             <a href="https://www.linkedin.com/in/stefanos-pappas/"><h2>Linkedin</h2></a>
                         </div>
                         <div>
-                            <a href="https://github.com/Stephpp/Stephpp"><img src={gh} alt="" /></a>
-                            <a href="https://github.com/Stephpp/Stephpp"><h2>GitHub</h2></a>
+                            <a href="https://github.com/Stephpp"><img src={gh} alt="" /></a>
+                            <a href="https://github.com/Stephpp"><h2>GitHub</h2></a>
                         </div>
                     </div>
                 </div>
                 <div className="c-right">
                     <div className="c-right-wrapper">
-                        <h1>hello</h1>
+                        <div>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <input type="text" />
+                        </div>
+                        <div><textarea name="" id="" cols="30" rows="10">
+                            </textarea></div>
                     </div>
                 </div>
             </div>
