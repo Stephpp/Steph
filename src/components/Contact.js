@@ -4,7 +4,7 @@ import email from '../SVG/email.svg';
 import gh from '../SVG/gh.svg';
 import ig from '../SVG/ig.svg';
 import linkedin from '../SVG/in.svg';
-import messenger from '../SVG/messenger.svg';
+import fb from '../SVG/fb.svg';
 
 const Contact = () => {
     return (
@@ -13,42 +13,57 @@ const Contact = () => {
             <div className="contact-wrapper">
                 <div className="c-left">
                     <div className="c-left-wrapper">
-                        <h1>Contact:</h1>
-                        <div>
+                        <h1>You can find me on:</h1>
+                        {/* <div>
                             <a href="mailto:stephpp404@gmail.com"><img src={email} alt="email" /></a>
                             <a href="mailto:stephpp404@gmail.com"><h2>E-mail</h2></a>
-                        </div>
-                        <div>
-                            <a href="https://m.me/stefanos.pappas.142"><img src={messenger} alt="messenger" /></a>
-                            <a href="https://m.me/stefanos.pappas.142"><h2>Messenger</h2></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/steph._.pp/"><img src={ig} alt="" /></a>
-                            <a href="https://www.instagram.com/steph._.pp/"><h2>Instagram</h2></a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/stefanos-pappas/"><img src={linkedin} alt="" /></a>
-                            <a href="https://www.linkedin.com/in/stefanos-pappas/"><h2>Linkedin</h2></a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/Stephpp"><img src={gh} alt="" /></a>
-                            <a href="https://github.com/Stephpp"><h2>GitHub</h2></a>
-                        </div>
+                        </div> */}
+                        <a href="https://www.instagram.com/steph._.pp/">
+                            <div>
+                                <img src={ig} alt="instagram" />
+                                <h2>Instagram</h2>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/stefanos-pappas/">
+                            <div>
+                                <img src={linkedin} alt="linkedin" />
+                                <h2>Linkedin</h2>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Stephpp">
+                            <div>
+                                <img src={gh} alt="github" />
+                                <h2>GitHub</h2>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/stefanos.pappas.142/">
+                            <div>
+                                <img src={fb} alt="facebook" />
+                                <h2>Facebook</h2>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className="c-right">
                     <div className="c-right-wrapper">
-                        <div>
-                            <input type="text" />
+                        <h2 className='c-title'>Or send a direct email:</h2>
+                        <div className="c-form">
+                            <div>
+                                <input type="text" placeholder='Name' />
+                            </div>
+                            <div>
+                                <input type="text" placeholder='Subject' />
+                            </div>
+                            <div>
+                                <input type="text" placeholder='E-mail' />
+                            </div>
+                            <div>
+                                <h3 className='c-content-title'>Content</h3>
+                                <textarea name="" id="" cols="30" rows="10">
+                                </textarea>
+                            </div>
+                            <button className='c-sumbit-button'>Submit</button>
                         </div>
-                        <div>
-                            <input type="text" />
-                        </div>
-                        <div>
-                            <input type="text" />
-                        </div>
-                        <div><textarea name="" id="" cols="30" rows="10">
-                            </textarea></div>
                     </div>
                 </div>
             </div>
