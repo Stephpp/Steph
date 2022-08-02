@@ -240,17 +240,19 @@ body {
 
 .project-wrapper {
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
 }
 
 .project-item {
     display: flex;
-    flex: 1 1;
     flex-direction: column;
     width: 20vw;
-    margin: 0 6vw;
+    height: 40vh;
+    margin: 0 5vw 4vh 5vw;
+    min-width: 280px;
+    min-height: 370px;
     text-align: center;
     background-color: #e6a6ff;
     border: 3px solid black;
@@ -347,12 +349,13 @@ body {
     height:100%;
     border: 3px solid black;
     box-shadow: 10px 10px black;
-    background-color: white;
+    background-color: #CBE2F5;
     display: flex;
     flex-direction: column;
 }
 
 .c-form textarea {
+    background-color: white;
     padding:10px;
     width: 90%;
     height: 100%;
@@ -371,6 +374,8 @@ body {
 
 
 .c-form input {
+    background-color: #CBE2F5;
+    width: 40%;
     margin-bottom: 3%;
     font-size: 20px;
     border:none;
@@ -380,11 +385,11 @@ body {
 }
 
 .c-form input:focus {
-    border-bottom: 2.5px solid #e6a6ff;
+    width: 50%;
     outline:none;
 }
 
-.c-form button {
+.c-send-button {
     margin-top: 20px;
     font-size: 20px;
     width: fit-content;
@@ -395,12 +400,47 @@ body {
     outline:none;
 }
 
-.c-form button:hover, button:focus {
-    background-color: #ffdbad;
-    transform:translateY(2px);
-    box-shadow: 1px 1px black;
+.c-send-button:hover {
+    background-color: #95D7AE;
 }
 
+.c-send-button:focus {
+    transition: 0.2s ease-in-out;
+    animation: btn-animation 2s ease-in-out;
+}
+
+@keyframes btn-animation {
+    0% {
+        box-shadow: 3px 3px black;
+        background-color: #95D7AE;
+    }
+    20% {
+        transform: translateY(2px) translateX(2px);
+        box-shadow: 1px 1px black;
+        background-color: #95D7AE;
+    }
+    80% {
+        transform: translateY(2px) translateX(2px);
+        box-shadow: 1px 1px black;
+        background-color: #95D7AE;
+    }
+    100% {
+        box-shadow: 3px 3px black;
+        background-color: #CBE2F5;
+    }
+}
+
+.c-send-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#c-send-message {
+    margin-left:20px;
+    color: #ff3c00
+}
 
 a {
     text-decoration: none;
