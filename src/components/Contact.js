@@ -60,10 +60,7 @@ const Contact = () => {
                 <div className="c-left">
                     <div className="c-left-wrapper">
                         <h1>You can find me on:</h1>
-                        {/* <div>
-                            <a target='_blank' href="mailto:stephpp404@gmail.com"><img src={email} alt="email" /></a>
-                            <a target='_blank' href="mailto:stephpp404@gmail.com"><h2>E-mail</h2></a>
-                        </div> */}
+                        <div className="c-links">
                         <a target='_blank' href="https://www.instagram.com/steph._.pp/">
                             <div>
                                 <img src={ig} alt="instagram" />
@@ -88,6 +85,7 @@ const Contact = () => {
                                 <h2>Facebook</h2>
                             </div>
                         </a>
+                        </div>
                     </div>
                 </div>
                 <div className="c-right">
