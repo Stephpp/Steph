@@ -46,43 +46,43 @@ const Contact = () => {
                     console.log(error.text);
                 });
             setsendText('Sending...')
-            setInterval(() => {
+            setTimeout(() => {
                 message.innerHTML = 'Message Sent'
                 message.style.color = '#95D7AE'
                 setsendText('Send')
-            }, 2000);
+            }, 1500);
         }
     }
     return (
-        <div className="contact">
+        <div id="contact">
             <h1 className='contact-section-title'>Get in Touch</h1>
             <div className="contact-wrapper">
                 <div className="c-left">
                     <div className="c-left-wrapper">
                         <h1>You can find me on:</h1>
                         {/* <div>
-                            <a href="mailto:stephpp404@gmail.com"><img src={email} alt="email" /></a>
-                            <a href="mailto:stephpp404@gmail.com"><h2>E-mail</h2></a>
+                            <a target='_blank' href="mailto:stephpp404@gmail.com"><img src={email} alt="email" /></a>
+                            <a target='_blank' href="mailto:stephpp404@gmail.com"><h2>E-mail</h2></a>
                         </div> */}
-                        <a href="https://www.instagram.com/steph._.pp/">
+                        <a target='_blank' href="https://www.instagram.com/steph._.pp/">
                             <div>
                                 <img src={ig} alt="instagram" />
                                 <h2>Instagram</h2>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/stefanos-pappas/">
+                        <a target='_blank' href="https://www.linkedin.com/in/stefanos-pappas/">
                             <div>
                                 <img src={linkedin} alt="linkedin" />
                                 <h2>Linkedin</h2>
                             </div>
                         </a>
-                        <a href="https://github.com/Stephpp">
+                        <a target='_blank' href="https://github.com/Stephpp">
                             <div>
                                 <img src={gh} alt="github" />
                                 <h2>GitHub</h2>
                             </div>
                         </a>
-                        <a href="https://www.facebook.com/stefanos.pappas.142/">
+                        <a target='_blank' href="https://www.facebook.com/stefanos.pappas.142/">
                             <div>
                                 <img src={fb} alt="facebook" />
                                 <h2>Facebook</h2>
@@ -97,7 +97,7 @@ const Contact = () => {
                             <input type="text" placeholder='Name' name='name' autoComplete='new-name' />
                             <input type="text" placeholder='Subject' name='subject' autoComplete='new-subject' />
                             <input type="text" placeholder='E-mail' name='email' autoComplete='new-email' />
-                            <textarea id='content' name="content" cols="30" rows="10" placeholder='Content' />
+                            <textarea id='content' name="content" cols="20" rows="8" placeholder='Content' />
                             <div className='c-send-section'>
                                 <button className='c-send-button'>{sendText}</button>
                                 <h2 id='c-send-message'></h2>

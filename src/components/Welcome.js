@@ -3,7 +3,7 @@ import '../App.css';
 
 const Welcome = () => {
     return (
-        <div className='welcome'>
+        <div id='welcome'>
             <div className="w-left">
                 <div className="w-left-wrapper">
                     <h2 className='w-hello'>Hey, I'm</h2>
