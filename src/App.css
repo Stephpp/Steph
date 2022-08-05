@@ -1,5 +1,5 @@
 /* colors:
-95D7AE
+b0e7c5
 CBE2F5
 e6a6ff
 ffdbad
@@ -439,17 +439,17 @@ focus {
 @keyframes btn-animation {
   0% {
     box-shadow: 3px 3px black;
-    background-color: #95d7ae;
+    background-color: #b0e7c5;
   }
   10% {
     transform: translateY(2px) translateX(2px);
     box-shadow: 1px 1px black;
-    background-color: #95d7ae;
+    background-color: #b0e7c5;
   }
   90% {
     transform: translateY(2px) translateX(2px);
     box-shadow: 1px 1px black;
-    background-color: #95d7ae;
+    background-color: #b0e7c5;
   }
   100% {
     box-shadow: 3px 3px black;
@@ -546,7 +546,7 @@ a {
 
   #contact {
     margin-top: 50%;
-    margin-bottom: 50%;
+    margin-bottom: 20%;
   }
 
   .c-left {
@@ -579,15 +579,12 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  
-  .c-form input {
-    font-size: 15px;
-  }
 
   .c-form textarea {
     background-color: white;
     padding: 10px;
     height: 100%;
+    width: calc(100%-20px);
     resize: none;
     font-family: "VelaSans";
     font-size: 15px;
@@ -603,17 +600,29 @@ a {
 
   .c-form input {
     background-color: #ffdbad;
-    width: 40%;
     margin-bottom: 20px;
-    font-size: 20px;
     border: none;
     border-bottom: 2px solid black;
     font-family: "VelaSans";
     transition: 0.2s ease-in-out;
+    font-size: 15px;
+    width: 100%;
   }
+
+  .c-form input:focus {
+    width: 100%;
+    outline: none;
+  }
+
   .c-form {
     background-color: #ffdbad;
     border: none;
     box-shadow: none;
   }
+
+  body {
+    background-image: url("./SVG/mobile_background.svg");
+    
+  }
+
 }

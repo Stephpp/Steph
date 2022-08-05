@@ -48,7 +48,7 @@ const Contact = () => {
             setsendText('Sending...')
             setTimeout(() => {
                 message.innerHTML = 'Message Sent'
-                message.style.color = '#95D7AE'
+                message.style.color = '#9dd3ff'
                 setsendText('Send')
             }, 1500);
         }
