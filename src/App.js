@@ -9,7 +9,7 @@ import NavBar from './components/NavBar';
 const App = () => {
     return (
         <div id="app">
-            <NavBar/>
+            {/* <NavBar/> */}
             <Welcome/>
             <About/>
             <Projects/>

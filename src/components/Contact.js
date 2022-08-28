@@ -23,7 +23,7 @@ const Contact = () => {
         if (name === "" || subject === "" || email === "" || content === "") { //empty field check
 
                 message.innerHTML = 'Please fill out all the fields'
-                message.style.color = '#ff3c00'
+                message.style.color = '#1ac05a'
                 return;
         }
 
@@ -48,7 +48,7 @@ const Contact = () => {
             setsendText('Sending...')
             setTimeout(() => {
                 message.innerHTML = 'Message Sent'
-                message.style.color = '#9dd3ff'
+                message.style.color = '#1ac05a'
                 setsendText('Send')
             }, 1500);
         }
