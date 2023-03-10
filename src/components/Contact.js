@@ -23,7 +23,7 @@ const Contact = () => {
         if (name === "" || subject === "" || email === "" || content === "") { //empty field check
 
                 message.innerHTML = 'Please fill out all the fields'
-                message.style.color = '#1ac05a'
+                message.style.color = '#ff3c00'
                 return;
         }
 
