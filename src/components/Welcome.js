@@ -11,9 +11,8 @@ const Welcome = () => {
                     <div className="w-roles">
                         <div className="w-roles-wrapper">
                             <div className="role w-roles-item1">Front-End Developer</div>
-                            <div className="role w-roles-item2">Graphic Designer</div>
-                            <div className="role w-roles-item3">Web Designer</div>
-                            <div className="role w-roles-item4">Doodle Artist</div>
+                            <div className="role w-roles-item2">Beginner UI/UX Designer</div>
+                            <div className="role w-roles-item3">Doodle Artist</div>
                         </div>
                     </div>
                 </div>
